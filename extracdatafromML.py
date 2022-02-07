@@ -16,7 +16,7 @@ t=datetime.today().strftime('%Y-%m-%d')
 
 while True:
     print('working...')
-    url='https://tendencias.mercadolibre.com.co/1000-electronica__audio_y_video'
+    url='https://tendencias.mercadolibre.com.co/1000-electronica__audio_y_video'#check the specific link to your country
     html = urllib.request.urlopen(url, context=ctx).read()
     soup = BeautifulSoup(html, "html.parser")
     tags=soup('a')
